@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -21,7 +22,7 @@ public class HomePage extends base{
 	public WebDriver driver;
 	
 	 public static Logger log =LogManager.getLogger(base.class.getName());
-	@BeforeTest
+	@BeforeClass
 	public void initialize() throws IOException
 	{
 	
@@ -54,7 +55,7 @@ public class HomePage extends base{
 		
 		}
 
-	@AfterTest
+	@AfterClass
 	public void teardown()
 	{
 		
